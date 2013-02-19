@@ -1,0 +1,6 @@
+project(cmordor)
+add_definitions( "-Wall -g -O0 -pthread")
+set(SRC_LIST main.cpp daemon.cpp)
+add_executable(cmordor ${SRC_LIST})
+TARGET_LINK_LIBRARIES(cmordor pthread)
+#set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/../bin)

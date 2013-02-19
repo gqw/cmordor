@@ -1,0 +1,5 @@
+PROJECT(test)
+SET(SRC_LIST main.cpp BasicExcel.cpp)
+ADD_EXECUTABLE(test ${SRC_LIST})
+TARGET_LINK_LIBRARIES(test redfox xl pq redfoxpq boost_date_time)
+#set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/../bin)
